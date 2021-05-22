@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardbtn"
+        app:cardUseCompatPadding="true"
+        android:elevation="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/hotel_room"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="$22%"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/imageView"
+                app:layout_constraintRight_toRightOf="@id/imageView"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:padding="3sp"
+                android:textSize="10dp"
+                android:textStyle="normal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_hotel_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Millennium Muscat"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/txt_hotel_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Millennium Muscat"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:visibility="visible"
+                    android:drawableLeft="@drawable/ic_baseline_fmd_good_24"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:textSize="12dp"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableLeft="@drawable/ic_baseline_fmd_good_24"-->
+<!--                    android:text=" Dohat al Adab Street Al Khuwair Muscat"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textStyle="normal"-->
+<!--                    android:textSize="10dp"/>-->
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

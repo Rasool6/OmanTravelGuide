@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    tools:context=".HotelActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_view"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/hotel_room"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16sp"
+                android:weightSum="6">
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pearl Continental"
+                    android:textSize="14sp"
+                    android:padding="5sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_call_24"
+                    android:background="@drawable/hotel_background"
+                    android:padding="3sp"
+                    android:textSize="16dp"
+                    android:textStyle="normal"/>
+
+                <TextView
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_email_24"
+                    android:background="@drawable/hotel_background"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_language_24"
+                    android:background="@drawable/hotel_background"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/hotelPricing"
+                    android:layout_marginLeft="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$250"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:textColor="#5CC926"
+                    android:padding="3sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E 11 Main Markaz Islamabad"
+                android:drawableLeft="@drawable/ic_baseline_fmd_good_24"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16sp"
+                android:textStyle="normal"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/green"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp">
+
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4"
+                android:id="@+id/ratingId"
+                android:drawableRight="@drawable/ic_baseline_star_24"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/green"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp">
+
+            </View>
+
+            <TextView
+                android:id="@+id/txt_booking_paragraph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Some English teachers will tell you good writing has a beginning, middle, and end, but then leave it at that. And that’s true—almost all good writing follows an introduction-body-conclusion format"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:textStyle="normal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/green"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Free Wifi"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_baseline_wifi_24"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_pool_24"
+                    android:drawablePadding="10dp"
+                    android:text="Swimming Pool"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+                      <LinearLayout
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="16sp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resturants"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_baseline_restaurant_24"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_local_cafe_24"
+                    android:drawablePadding="10dp"
+                    android:text="Bar/Lounge"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="8dp">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_local_cafe_24"
+                    android:drawablePadding="10dp"
+                    android:text="Room Services"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/checkAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:layout_margin="16sp"
+                android:text="Book it">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

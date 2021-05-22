@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Oman Travel Guide</string>
+
+
+    <string-array name="roomtype">
+        <item>Select Room Type</item>
+        <item>Single bed</item>
+        <item>Multiple bed</item>
+    </string-array>
+
+    <string-array name="choose">
+
+        <item>Select User Role</item>
+        <item>Login as Admin</item>
+        <item>Login as a User</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

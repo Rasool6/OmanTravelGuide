@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522203238688",
+    "project_id": "oman-travel-guide",
+    "storage_bucket": "oman-travel-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522203238688:android:dd9d595ccc14da6dc00745",
+        "android_client_info": {
+          "package_name": "com.example.omantravelguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522203238688-80a24741somtsiclpmi9nnp1c9s7b70t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgE5WFJqV6wJ2rIOsRxd0bvCHJm-ovF1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522203238688-80a24741somtsiclpmi9nnp1c9s7b70t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
